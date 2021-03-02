@@ -3,7 +3,7 @@
 		ratatta: uaa
 		pcfone: dekt-prod
 
-cf create-service p.gateway standard dekt4pets-gw -c gateway-config.json
+cf create-service p.gateway standard animals-gw -c animals-TAS-GW.json
 
 	(created the SSO service automatically)
 
@@ -13,14 +13,13 @@ cf create-service p.gateway standard dekt4pets-gw -c gateway-config.json
 
 cf push
 
-./route_updates dynamic //in rattata
-./route_updates static //in pcfone
+./route_updates static 
 
 	show direct access to each microservice is blocked
 
 	show routes refreshed
 
-dekt4pets.<apps domain>/rescue
+animals.<apps domain>/rescue
 
 	log out in /rescue BEFOR showing the GW dashboard, know issue being fixed
 
@@ -28,16 +27,15 @@ dekt4pets.<apps domain>/rescue
 
 "filters": [ "RateLimit=2,10s" ]
 
-./route_updates dynamic //in rattata
-./route_updates static //in pcfone
+./route_updates dynamic 
 
-curl -k https://dekt4pets.apps.rattata.cf-app.com/rescue
+curl -k https://animals.<apps domain>/rescue
 
 	3 times in 10 seconds to show rate limit 
 	
 	curl -k https://dekt4pets.apps.pcfone.io/rescue
 
-cf service-logs dekt4pets-gw --skip-ssl-validation
+cf service-logs animals-TAS-gw --skip-ssl-validation
 
 	look at GW logs (requires the service cli plugin: cf install-plugin -r CF-Community "Service Instance Logging"
 

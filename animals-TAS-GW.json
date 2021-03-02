@@ -1,6 +1,6 @@
 {
   "sso": {
-    "plan": "dekt-prod"
+    "plan": "system"
   },
   "count": 2,
   "host": "animals",

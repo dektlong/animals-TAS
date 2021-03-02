@@ -3,7 +3,7 @@
 ROOT_DIR=$(pwd)
 GATEWAY_NAME=animals-gw
 GATEWAY_CONFIG=animals-TAS-GW.json
-FRONTEND_APP_NAME=dekt4pets-frontend
+FRONTEND_APP_NAME=animals-frontend
 FRONTEND_ROUTE_CONFIG=frontend/animals-TAS-frontend-routes.json
 BACKEND_APP_NAME=animals-backend
 BACKEND_ROUTE_CONFIG=backend/animals-TAS-backend-routes.json
