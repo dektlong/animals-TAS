@@ -1,12 +1,12 @@
 #!/bin/bash
 
 ROOT_DIR=$(pwd)
-GATEWAY_NAME=dekt4pets-gw
-GATEWAY_CONFIG=dekt4pets-TAS-GW.json
+GATEWAY_NAME=animals-gw
+GATEWAY_CONFIG=animals-TAS-GW.json
 FRONTEND_APP_NAME=dekt4pets-frontend
-FRONTEND_ROUTE_CONFIG=frontend/dekt4pets-TAS-frontend-routes.json
-BACKEND_APP_NAME=dekt4pets-backend
-BACKEND_ROUTE_CONFIG=backend/dekt4pets-TAS-backend-routes.json
+FRONTEND_ROUTE_CONFIG=frontend/animals-TAS-frontend-routes.json
+BACKEND_APP_NAME=animals-backend
+BACKEND_ROUTE_CONFIG=backend/animals-TAS-backend-routes.json
 
 
 

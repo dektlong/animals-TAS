@@ -3,14 +3,14 @@ applications:
 - name: dekt4pets-frontend
   path: frontend/build
   routes:
-    - route: dekt4pets-frontend.apps.internal
+    - route: animals-frontend.apps.internal
   services:
-    - dekt4pets-gw
-- name: dekt4pets-backend
+    - animals-gw
+- name: animals-backend
   path: backend/build/libs/backend-0.0.1-SNAPSHOT.jar
   memory: 1G
   routes:
-    - route: dekt4pets-backend.apps.internal
+    - route: animals-backend.apps.internal
   services:
-    - dekt4pets-gw
+    - animals-gw
 
